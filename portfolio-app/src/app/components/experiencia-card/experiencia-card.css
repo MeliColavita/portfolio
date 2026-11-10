@@ -1,0 +1,4 @@
+.tarjeta { border-left: 4px solid #222; padding: 0.5rem 1rem; margin-bottom: 1rem; cursor: pointer; }
+.tarjeta:hover { background: #f2f2f2; }
+.tipo { text-transform: uppercase; font-size: 0.8rem; color: #666; }
+h4 { margin: 0.3rem 0; }

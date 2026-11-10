@@ -1,0 +1,5 @@
+.sobre-mi { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+.columnas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.detalle { background: #f2f2f2; padding: 1rem; border-radius: 8px; }
+.lugar, .ayuda { color: #666; }
+.etiqueta { display: inline-block; background: #222; color: white; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; margin: 0 0.3rem 0.3rem 0; }

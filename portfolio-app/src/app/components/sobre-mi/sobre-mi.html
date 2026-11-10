@@ -1,1 +1,35 @@
-<p>sobre-mi works!</p>
+<section class="sobre-mi">
+  <h2>Sobre mí</h2>
+  <p>Estudiante de 4º año de la Licenciatura en Sistemas en la Universidad CAECE.</p>
+
+  <div class="columnas">
+    <div>
+      <h3>Formación y experiencia</h3>
+      @for (experiencia of experiencias(); track experiencia.id) {
+        <app-experiencia-card [experiencia]="experiencia" (seleccionar)="mostrarDetalle($event)" />
+      }
+
+      @if (seleccionada(); as exp) {
+        <div class="detalle">
+          <h4>{{ exp.titulo }}</h4>
+          <p class="lugar">{{ exp.lugar }}</p>
+          <p>{{ exp.descripcion }}</p>
+        </div>
+      } @else {
+        <p class="ayuda">Hacé clic en una tarjeta para ver el detalle.</p>
+      }
+    </div>
+
+    <div>
+      <h3>Skills</h3>
+      @for (skill of skills(); track skill.id) {
+        <h4>{{ skill.categoria }}</h4>
+        <div>
+          @for (item of skill.items; track item) {
+            <span class="etiqueta">{{ item }}</span>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,1 +1,13 @@
-<p>login works!</p>
+<section class="login">
+  <h2>Login</h2>
+  <form (submit)="enviar($event)">
+    <label for="nombre">Nombre de usuario</label>
+    <input #inputNombre id="nombre" type="text" [value]="nombre()" (input)="nombre.set(inputNombre.value)">
+    <label for="email">Email</label>
+    <input #inputEmail id="email" type="email" [value]="email()" (input)="email.set(inputEmail.value)">
+    <button type="submit">Enviar</button>
+  </form>
+  @if (mensaje()) {
+    <p class="mensaje">{{ mensaje() }}</p>
+  }
+</section>

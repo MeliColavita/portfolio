@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cáncer de mama en Argentina: el mapa de la brecha",
+    "tipo": "Análisis de datos",
+    "estado": "Terminado",
+    "anio": 2026,
+    "equipo": "Emiliano, Brenda y Melisa",
+    "resumen": "Sitio web de visualización de datos para el concurso Contar con Datos.",
+    "contexto": "Proyecto grupal presentado al concurso Contar con Datos, sobre la detección del cáncer de mama en Argentina.",
+    "problema": "El acceso al diagnóstico temprano no es igual en todo el país. Queríamos mostrar si las provincias con menos mamógrafos y mamografías tienen también más mortalidad.",
+    "rol": "Desarrollé la sección sobre la situación actual del país (incidencia). También configuré la delegación del dominio en NIC Argentina y publiqué el sitio en el hosting por SFTP.",
+    "solucion": "Un sitio narrativo en tres capítulos (Argentina hoy, El tiempo, El futuro) que compara por provincia la mortalidad con el acceso al diagnóstico. Diseño oscuro con acentos rosa y una vela que se consume a medida que avanza el relato.",
+    "resultado": "Sitio publicado en cancerdemama.com.ar. COMPLETAR: resultado del concurso, si ya se conoce.",
+    "tecnologias": [
+      "COMPLETAR (ej.: HTML, CSS, JavaScript)",
+      "Visualización de datos",
+      "Datos abiertos"
+    ],
+    "repo": "COMPLETAR o null",
+    "sitio": "https://cancerdemama.com.ar",
+    "documento": null,
+    "imagen": "assets/img/cancer-mama.png"
+  },
+  {
+    "id": 2,
+    "titulo": "MentorIA: análisis y diseño de una plataforma e-learning",
+    "tipo": "Análisis y diseño",
+    "estado": "Terminado",
+    "anio": 2025,
+    "equipo": "Grupo 6 (NeoMentores): Julieta Bucci, Melisa Colavita, Emiliano Wampl",
+    "resumen": "Análisis, especificación y diseño completo de una plataforma e-learning con recomendaciones por IA.",
+    "contexto": "Trabajo integrador de Ingeniería de Software II (Universidad CAECE). Había que llevar un sistema desde la elicitación hasta el diseño y las pruebas.",
+    "problema": "Las plataformas e-learning existentes son poco flexibles y no se adaptan al progreso de cada estudiante. MentorIA propone clases sincrónicas y asincrónicas, guardias con docentes y recomendaciones de contenido con IA.",
+    "rol": "Analista en el equipo: redacté y diseñé casos de uso detallados, entre ellos Realizar inscripción a curso pago y Establecer preferencias. COMPLETAR: otras partes en las que trabajaste.",
+    "solucion": "Benchmarking de competidores, encuesta a usuarios y entrevista a una docente. Modelo de casos de uso, ERS según IEEE 830, diagramas de secuencia, clases, estados y actividades (con patrón Observer para notificaciones), prototipos de interfaz y diseño de pruebas de caja negra y caja blanca.",
+    "resultado": "Test de first click con 6 participantes: 100% de acierto al iniciar un curso, 67% al buscar recomendaciones y 50% al ver actividades. Esto llevó a proponer mejoras de terminología y de visibilidad en la interfaz.",
+    "tecnologias": [
+      "UML",
+      "IEEE 830",
+      "Prototipado",
+      "Testing de usabilidad"
+    ],
+    "repo": null,
+    "sitio": null,
+    "documento": "assets/docs/mentoria-informe.pdf",
+    "imagen": "assets/img/mentoria-prototipo.png"
+  },
+  {
+    "id": 3,
+    "titulo": "Sistema de reserva de aulas universitarias",
+    "tipo": "Programación orientada a objetos",
+    "estado": "Terminado",
+    "anio": 2024,
+    "equipo": "Melisa Colavita, Emmanuel Failla, Valentín Galván, Emiliano Wampl",
+    "resumen": "Aplicación de consola en Java para gestionar las reservas de aulas de la Universidad CAECE.",
+    "contexto": "Trabajo práctico de Java sobre la sede Mar del Plata de la Universidad CAECE.",
+    "problema": "Las aulas se reservan para asignaturas, cursos de extensión y eventos internos o externos. Cada uno tiene reglas distintas de fechas, horarios, capacidad y cobro, y no se pueden superponer reservas.",
+    "rol": "COMPLETAR",
+    "solucion": "Modelo orientado a objetos con una clase abstracta Reservador y cuatro tipos de reserva (Asignatura, CursoDeExtension, EventoInterno, EventoExterno). Los datos iniciales se cargan desde un XML y se guardan por serialización, así el estado persiste entre ejecuciones. El menú permite listar entidades, buscar aulas por piso y código, reservar, cancelar y generar reportes, con excepciones propias para valores inválidos y aulas sin disponibilidad.",
+    "resultado": "Programa funcional y documentado con JavaDoc. Genera reportes en archivo, por ejemplo el monto recaudado por aula, por piso y total (con los datos de prueba: 9 aulas en 3 pisos, $174.900).",
+    "tecnologias": [
+      "Java",
+      "POO (herencia y polimorfismo)",
+      "Colecciones",
+      "XML (DOM)",
+      "Serialización",
+      "Excepciones",
+      "JavaDoc"
+    ],
+    "repo": "COMPLETAR (subir esta versión a un repo nuevo)",
+    "sitio": null,
+    "documento": null,
+    "imagen": "assets/img/diagrama-clases-aulas.png"
+  }
+]

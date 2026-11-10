@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "categoria": "Desarrollo web",
+    "items": ["Angular", "TypeScript", "HTML", "CSS", "JavaScript", "Firebase", "Netlify"],
+    "proyectos": [1]
+  },
+  {
+    "id": 2,
+    "categoria": "Datos e inteligencia artificial",
+    "items": ["Python", "TensorFlow / Keras", "Redes neuronales convolucionales", "Visualización de datos", "Google Colab"],
+    "proyectos": [1]
+  },
+  {
+    "id": 3,
+    "categoria": "Análisis y diseño de sistemas",
+    "items": ["UML", "Casos de uso", "ERS (IEEE 830)", "Prototipado", "Testing de usabilidad"],
+    "proyectos": [2]
+  },
+  {
+    "id": 4,
+    "categoria": "Programación y bases de datos",
+    "items": ["Java", "Programación orientada a objetos", "MySQL"],
+    "proyectos": [3]
+  },
+  {
+    "id": 5,
+    "categoria": "Herramientas",
+    "items": ["Git", "GitHub", "Postman", "VS Code"],
+    "proyectos": [1, 3]
+  },
+  {
+    "id": 6,
+    "categoria": "En formación",
+    "items": ["Ciberseguridad", "OAuth / OpenID Connect", "MITRE ATT&CK", "Redes y telecomunicaciones"],
+    "proyectos": []
+  }
+]

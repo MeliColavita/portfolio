@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "tipo": "Formación",
+    "titulo": "Licenciatura en Sistemas",
+    "lugar": "Universidad CAECE, Mar del Plata",
+    "periodo": "COMPLETAR (año de inicio) – actualidad",
+    "estado": "En curso",
+    "descripcion": "Cursando 4º año. Formación en desarrollo web, ingeniería de software, bases de datos, redes y telecomunicaciones, métodos numéricos, lenguajes formales y compiladores, y aprendizaje automático aplicado."
+  },
+  {
+    "id": 2,
+    "tipo": "Laboral",
+    "titulo": "Reportes de gestión",
+    "lugar": "COMPLETAR (empresa)",
+    "periodo": "COMPLETAR",
+    "estado": "COMPLETAR (actual o finalizado)",
+    "descripcion": "Elaboración de reportes de volumen y facturación para gerencia. Simplificación de reportes para presentar indicadores concretos y diferenciar el seguimiento de producción propia y de terceros."
+  },
+  {
+    "id": 3,
+    "tipo": "Concurso",
+    "titulo": "Concurso Contar con Datos",
+    "lugar": "Equipo de 3 personas",
+    "periodo": "2026",
+    "estado": "COMPLETAR (resultado)",
+    "descripcion": "Desarrollo de un sitio de visualización de datos sobre la detección del cáncer de mama en Argentina, comparando mortalidad y acceso al diagnóstico por provincia.",
+    "proyecto": 1
+  }
+]

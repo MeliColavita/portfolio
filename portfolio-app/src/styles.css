@@ -1,1 +1,7 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+:root { --fondo: #212325; --turquesa: #1de9b6; --rosa: #ff1f5a; --texto: #ffffff; }
+body { background: var(--fondo); color: var(--texto); }
+a { color: var(--turquesa); }
+a:hover { color: var(--rosa); }
+.btn-contorno { border: 1px solid var(--turquesa); color: var(--turquesa); background: transparent; }
+.btn-contorno:hover { background: var(--turquesa); color: var(--fondo); }

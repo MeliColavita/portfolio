@@ -2,13 +2,13 @@
   {
     "id": 1,
     "categoria": "Desarrollo web",
-    "items": ["Angular", "TypeScript", "HTML", "CSS", "JavaScript", "Firebase", "Netlify"],
+    "items": ["HTML", "CSS", "JavaScript", "Angular", "TypeScript", "Netlify"],
     "proyectos": [1]
   },
   {
     "id": 2,
     "categoria": "Datos e inteligencia artificial",
-    "items": ["Python", "TensorFlow / Keras", "Redes neuronales convolucionales", "Visualización de datos", "Google Colab"],
+    "items": ["Python", "TensorFlow / Keras", "Redes neuronales convolucionales", "Visualización de datos"],
     "proyectos": [1]
   },
   {
@@ -20,19 +20,13 @@
   {
     "id": 4,
     "categoria": "Programación y bases de datos",
-    "items": ["Java", "Programación orientada a objetos", "MySQL"],
+    "items": ["Java", "C++", "MySQL"],
     "proyectos": [3]
   },
   {
     "id": 5,
     "categoria": "Herramientas",
-    "items": ["Git", "GitHub", "Postman", "VS Code"],
+    "items": ["Git", "GitHub", "VS Code", "Google Colab", "Draw io", "Figma"],
     "proyectos": [1, 3]
-  },
-  {
-    "id": 6,
-    "categoria": "En formación",
-    "items": ["Ciberseguridad", "OAuth / OpenID Connect", "MITRE ATT&CK", "Redes y telecomunicaciones"],
-    "proyectos": []
   }
 ]

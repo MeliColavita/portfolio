@@ -5,19 +5,19 @@
     "tipo": "Análisis de datos",
     "estado": "Terminado",
     "anio": 2026,
-    "equipo": "Emiliano, Brenda y Melisa",
+    "equipo": "Brenda Abatedaga, Melisa Colavita y Wampl Emiliano",
     "resumen": "Sitio web de visualización de datos para el concurso Contar con Datos.",
     "contexto": "Proyecto grupal presentado al concurso Contar con Datos, sobre la detección del cáncer de mama en Argentina.",
     "problema": "El acceso al diagnóstico temprano no es igual en todo el país. Queríamos mostrar si las provincias con menos mamógrafos y mamografías tienen también más mortalidad.",
     "rol": "Desarrollé la sección sobre la situación actual del país (incidencia). También configuré la delegación del dominio en NIC Argentina y publiqué el sitio en el hosting por SFTP.",
     "solucion": "Un sitio narrativo en tres capítulos (Argentina hoy, El tiempo, El futuro) que compara por provincia la mortalidad con el acceso al diagnóstico. Diseño oscuro con acentos rosa y una vela que se consume a medida que avanza el relato.",
-    "resultado": "Sitio publicado en cancerdemama.com.ar. COMPLETAR: resultado del concurso, si ya se conoce.",
+    "resultado": "Sitio publicado en cancerdemama.com.ar",
     "tecnologias": [
-      "COMPLETAR (ej.: HTML, CSS, JavaScript)",
+      "HTML, CSS, JavaScript",
       "Visualización de datos",
       "Datos abiertos"
     ],
-    "repo": "COMPLETAR o null",
+    "repo": null,
     "sitio": "https://cancerdemama.com.ar",
     "documento": null,
     "imagen": "assets/img/cancer-mama.png"
@@ -28,7 +28,7 @@
     "tipo": "Análisis y diseño",
     "estado": "Terminado",
     "anio": 2025,
-    "equipo": "Grupo 6 (NeoMentores): Julieta Bucci, Melisa Colavita, Emiliano Wampl",
+    "equipo": "Julieta Bucci, Melisa Colavita, Emiliano Wampl",
     "resumen": "Análisis, especificación y diseño completo de una plataforma e-learning con recomendaciones por IA.",
     "contexto": "Trabajo integrador de Ingeniería de Software II (Universidad CAECE). Había que llevar un sistema desde la elicitación hasta el diseño y las pruebas.",
     "problema": "Las plataformas e-learning existentes son poco flexibles y no se adaptan al progreso de cada estudiante. MentorIA propone clases sincrónicas y asincrónicas, guardias con docentes y recomendaciones de contenido con IA.",
@@ -68,9 +68,28 @@
       "Excepciones",
       "JavaDoc"
     ],
-    "repo": "COMPLETAR (subir esta versión a un repo nuevo)",
+    "repo": "https://github.com/emiwampl/Gestion-de-Reservas---Universidad.git",
     "sitio": null,
     "documento": null,
     "imagen": "assets/img/diagrama-clases-aulas.png"
-  }
+  },
+  {
+  "id": 4,
+  "titulo": "Detección de cáncer de mama con una red neuronal convolucional",
+  "tipo": "Machine Learning",
+  "estado": "Terminado",
+  "anio": 2026,
+  "equipo": "Brenda Abatedaga, Melisa Colavita y Wampl Emiliano",
+  "resumen": "Red neuronal convolucional desarrollada desde cero para clasificar mamografías en benignas y malignas.",
+  "contexto": "Proyecto grupal de aprendizaje automático aplicado en la Universidad CAECE, planteado como caso de estudio del trabajo de Google Health publicado en Nature en 2020.",
+  "problema": "La lectura de mamografías es exigente y depende de la experiencia del especialista. Queríamos evaluar si una red entrenada desde cero puede distinguir casos benignos de malignos.",
+  "rol": "Participé en el desarrollo de la red desde cero: armado del pipeline de datos, definición y entrenamiento del modelo en Google Colab, y análisis de resultados. Detecté y corregí un error crítico en la carga de datos que hacía que el modelo se entrenara con imágenes sintéticas en lugar de las mamografías reales, e interpreté las curvas de entrenamiento, las curvas ROC y las matrices de confusión.",
+  "solucion": "Entrenamos una CNN en TensorFlow/Keras con 10.000 mamografías de alta resolución del dataset VinDr-Mammo, con etiquetas benigno/maligno obtenidas a partir de la clasificación BI-RADS. Corrimos los entrenamientos en Google Colab Pro con GPU y depuramos el pipeline de datos.",
+  "resultado": "Comparamos entrenamientos de 20 y 40 épocas y detectamos el inicio del sobreajuste. Evaluamos el modelo con curvas ROC/AUC y matrices de confusión. COMPLETAR: AUC final.",
+  "tecnologias": ["Python", "TensorFlow / Keras", "Redes neuronales convolucionales", "Google Colab"],
+  "repo": "https://colab.research.google.com/drive/14G4oZGV-QTDqNFp5HtYcKgVFh669XUMd?usp=sharing",
+  "sitio": null,
+  "documento": null,
+  "imagen": "assets/img/cnn-mamografias.png"
+}
 ]

@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cáncer de mama en Argentina: el mapa de la brecha",
+    "tipo": "Análisis de datos",
+    "estado": "Terminado",
+    "anio": 2026,
+    "equipo": "Brenda Abatedaga, Melisa Colavita y Emiliano Wampl",
+    "resumen": "Sitio web de visualización de datos para el concurso Contar con Datos.",
+    "contexto": "Proyecto grupal que presentamos al concurso Contar con Datos, sobre la detección del cáncer de mama en Argentina.",
+    "problema": "El acceso al diagnóstico temprano no es igual en todo el país. Quisimos mostrar si las provincias con menos mamógrafos y mamografías tienen también más mortalidad.",
+    "rol": "Desarrollamos dos secciones del sitio: la situación actual del país (incidencia) y El futuro, con la distribución de mamógrafos por localidad. Además configuramos la delegación del dominio en NIC Argentina y publicamos el sitio en el hosting por SFTP.",
+    "solucion": "Armamos un sitio narrativo en tres capítulos (Argentina hoy, El tiempo, El futuro) que compara por provincia la mortalidad con el acceso al diagnóstico. Lo diseñamos con fondo oscuro, acentos rosa y una vela que se consume a medida que avanza el relato.",
+    "resultado": "Publicamos el sitio en cancerdemama.com.ar y lo presentamos al concurso.",
+    "tecnologias": ["HTML", "CSS", "JavaScript", "Visualización de datos", "Datos abiertos"],
+    "repo": null,
+    "sitio": "https://cancerdemama.com.ar",
+    "documentos": [],
+    "imagen": "assets/img/cancer-mama.png"
+  },
+  {
+    "id": 2,
+    "titulo": "MentorIA: análisis y diseño de una plataforma e-learning",
+    "tipo": "Análisis y diseño",
+    "estado": "Terminado",
+    "anio": "2024-2025",
+    "equipo":   "Análisis: Brenda Abatedaga, Melisa Colavita, Emmanuel Failla y Emiliano Wampl. Diseño: Julieta Bucci, Melisa Colavita y Emiliano Wampl",
+    "resumen": "Análisis, especificación y diseño completo de una plataforma e-learning con recomendaciones por IA.",
+    "contexto": "Trabajo integrador de Ingeniería de Software I y II en la Universidad CAECE: teníamos que llevar un sistema desde la elicitación de requerimientos hasta el diseño y las pruebas.",
+    "problema": "Las plataformas e-learning existentes son poco flexibles y no se adaptan al progreso de cada estudiante. Con MentorIA propusimos clases sincrónicas y asincrónicas, guardias con docentes y recomendaciones de contenido con IA.",
+    "rol": "Trabajamos como analistas del equipo: redactamos y diseñamos casos de uso detallados, entre ellos Realizar inscripción a curso pago y Establecer preferencias.",
+    "solucion": "Hicimos un benchmarking de competidores, una encuesta a usuarios y una entrevista a una docente. A partir de eso elaboramos el modelo de casos de uso, la ERS según IEEE 830, diagramas de secuencia, clases, estados y actividades (con patrón Observer para las notificaciones), prototipos de interfaz y el diseño de pruebas de caja negra y caja blanca.",
+    "resultado": "Realizamos un test de first click con 6 participantes: 100% de acierto al iniciar un curso, 67% al buscar recomendaciones y 50% al ver actividades. Con esos resultados propusimos mejoras de terminología y de visibilidad en la interfaz.",
+    "tecnologias": ["UML", "IEEE 830", "Prototipado", "Testing de usabilidad"],
+    "repo": null,
+    "sitio": null,
+    "documentos": [
+      { "titulo": "Informe de análisis", "url": "assets/docs/mentoria-analisis.pdf" },
+      { "titulo": "Informe de diseño", "url": "assets/docs/mentoria-diseno.pdf" }
+    ],
+    "imagen": "assets/img/mentoria-prototipo.png"
+  },
+  {
+    "id": 3,
+    "titulo": "Sistema de reserva de aulas universitarias",
+    "tipo": "Programación orientada a objetos",
+    "estado": "Terminado",
+    "anio": 2024,
+    "equipo": "Melisa Colavita, Emmanuel Failla, Valentín Galván y Emiliano Wampl",
+    "resumen": "Aplicación de consola en Java para gestionar las reservas de aulas de la Universidad CAECE.",
+    "contexto": "Trabajo práctico de Java sobre la sede Mar del Plata de la Universidad CAECE.",
+    "problema": "Las aulas se reservan para asignaturas, cursos de extensión y eventos internos o externos. Cada uno tiene reglas distintas de fechas, horarios, capacidad y cobro, y las reservas no se pueden superponer.",
+    "rol": "Formamos parte de un equipo de cuatro integrantes: desarrollamos una parte de las funcionalidades del sistema y colaboramos con el resto del grupo en el diseño del modelo orientado a objetos.",
+    "solucion": "Diseñamos un modelo orientado a objetos con una clase abstracta Reservador y cuatro tipos de reserva (Asignatura, CursoDeExtension, EventoInterno y EventoExterno). Los datos iniciales se cargan desde un XML y se guardan por serialización, para que el estado persista entre ejecuciones. El menú permite listar entidades, buscar aulas por piso y código, reservar, cancelar y generar reportes, con excepciones propias para valores inválidos y aulas sin disponibilidad.",
+    "resultado": "Entregamos un programa funcional y documentado con JavaDoc, que genera reportes en archivo; por ejemplo, el monto recaudado por aula, por piso y en total (con los datos de prueba: 9 aulas en 3 pisos, $174.900).",
+    "tecnologias": ["Java", "POO (herencia y polimorfismo)", "Colecciones", "XML (DOM)", "Serialización", "Excepciones", "JavaDoc"],
+    "repo": "https://github.com/emiwampl/Gestion-de-Reservas---Universidad.git",
+    "sitio": null,
+    "documentos": [],
+    "imagen": "assets/img/diagrama-clases-aulas.png"
+  },
+  {
+    "id": 4,
+    "titulo": "Detección de cáncer de mama con una red neuronal convolucional",
+    "tipo": "Machine Learning",
+    "estado": "Terminado",
+    "anio": 2026,
+    "equipo": "Brenda Abatedaga, Melisa Colavita y Emiliano Wampl",
+    "resumen": "Red neuronal convolucional desarrollada desde cero para clasificar mamografías en benignas y malignas.",
+    "contexto": "Trabajo integrador de Sistemas Inteligentes en la Universidad CAECE sobre el rol de la inteligencia artificial en el diagnóstico médico asistido.",
+    "problema": "La lectura de mamografías es exigente y depende de la experiencia del especialista. Quisimos evaluar cuánta confianza se puede depositar en la IA para este diagnóstico y si una red entrenada desde cero logra distinguir casos benignos de malignos.",
+    "rol": "Primero investigamos casos de estudio de IA aplicada a la mamografía (el sistema de Google Health publicado en Nature y el ensayo clínico MASAI de Suecia) para contextualizar cómo puede aportar la IA en salud. Después desarrollamos la red desde cero: armamos el pipeline de datos, definimos y entrenamos el modelo en Google Colab y analizamos los resultados. Detectamos y corregimos un error en la carga de datos que hacía que el modelo se entrenara con imágenes sintéticas en lugar de las mamografías reales, e interpretamos las curvas de entrenamiento y las curvas ROC.",
+    "solucion": "Entrenamos una CNN en TensorFlow/Keras con 10.000 mamografías del dataset VinDr-Mammo, etiquetadas como benignas o malignas según la clasificación BI-RADS. Recortamos la región de interés, redimensionamos las imágenes a 1024×1024, aplicamos data augmentation y pesos de clase, y corrimos los entrenamientos en Google Colab con GPU.",
+    "resultado": "Con 20 épocas el modelo alcanzó un AUC de 0,63 y con 40 épocas, de 0,64: por encima del azar (0,5), pero lejos de un sistema de nivel clínico como el de Google Health (más de 0,96). Duplicar las épocas no mejoró el AUC y aumentó el sobreajuste: la accuracy de validación cayó de 0,74 a 0,39.",
+    "tecnologias": ["Python", "TensorFlow / Keras", "Redes neuronales convolucionales", "Google Colab"],
+    "repo": "https://colab.research.google.com/drive/14G4oZGV-QTDqNFp5HtYcKgVFh669XUMd?usp=sharing",
+    "sitio": null,
+    "documentos": [
+      { "titulo": "Informe", "url": "assets/docs/cnn-informe.pdf" }
+    ],
+    "imagen": "assets/img/cnn-mamografias.png"
+  }
+]

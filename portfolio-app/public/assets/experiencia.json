@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "tipo": "Formación",
+    "titulo": "Licenciatura en Sistemas",
+    "lugar": "Universidad CAECE, Mar del Plata",
+    "periodo": "2023 – actualidad",
+    "estado": "En curso",
+    "descripcion": "Cursando 4º año. Formación en desarrollo web, ingeniería de software, bases de datos, redes y telecomunicaciones, métodos numéricos, lenguajes formales y compiladores, y aprendizaje automático aplicado."
+  },
+  {
+    "id": 2,
+    "tipo": "Formación",
+    "titulo": "Analista de Sistemas",
+    "lugar": "Universidad CAECE, Mar del Plata",
+    "periodo": "2023-2025",
+    "estado": "Título intermedio",
+    "descripcion": "Título intermedio de la Licenciatura en Sistemas. Formación en análisis y diseño de sistemas, programación orientada a objetos, bases de datos e ingeniería de software."
+  },
+  {
+    "id": 3,
+    "tipo": "Concurso",
+    "titulo": "Concurso Contar con Datos",
+    "lugar": "Equipo de 3 personas",
+    "periodo": "2026",
+    "estado": "En curso",
+    "descripcion": "Desarrollo de un sitio de visualización de datos sobre la detección del cáncer de mama en Argentina, comparando mortalidad y acceso al diagnóstico por provincia.",
+    "proyecto": 1
+  }
+]

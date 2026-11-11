@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "categoria": "Desarrollo web",
+    "items": ["HTML", "CSS", "JavaScript", "Angular", "TypeScript", "Netlify"],
+    "proyectos": [1]
+  },
+  {
+    "id": 2,
+    "categoria": "Datos e inteligencia artificial",
+    "items": ["Python", "TensorFlow / Keras", "Redes neuronales convolucionales", "Visualización de datos"],
+    "proyectos": [1]
+  },
+  {
+    "id": 3,
+    "categoria": "Análisis y diseño de sistemas",
+    "items": ["UML", "Casos de uso", "ERS (IEEE 830)", "Prototipado", "Testing de usabilidad"],
+    "proyectos": [2]
+  },
+  {
+    "id": 4,
+    "categoria": "Programación y bases de datos",
+    "items": ["Java", "C++", "MySQL"],
+    "proyectos": [3]
+  },
+  {
+    "id": 5,
+    "categoria": "Herramientas",
+    "items": ["Git", "GitHub", "VS Code", "Google Colab", "Draw io", "Figma"],
+    "proyectos": [1, 3]
+  }
+]

@@ -1,1 +1,59 @@
-<p>proyectos works!</p>
+<section class="proyectos">
+  <h2>Proyectos</h2>
+
+  @if (seleccionado(); as proyecto) {
+    <!-- Detalle del proyecto -->
+    <article class="detalle">
+      <button (click)="volver()">Volver</button>
+      <h3>{{ proyecto.titulo }}</h3>
+      <p class="datos">{{ proyecto.tipo }} - {{ proyecto.anio }} - {{ proyecto.equipo }}</p>
+      <img [src]="proyecto.imagen" [alt]="proyecto.titulo">
+
+      <h4>Contexto</h4>
+      <p>{{ proyecto.contexto }}</p>
+      <h4>Problema</h4>
+      <p>{{ proyecto.problema }}</p>
+      <h4>Nuestro rol</h4>
+      <p>{{ proyecto.rol }}</p>
+      <h4>Solución</h4>
+      <p>{{ proyecto.solucion }}</p>
+      <h4>Resultado</h4>
+      <p>{{ proyecto.resultado }}</p>
+
+      <div class="tecnologias">
+        @for (tecnologia of proyecto.tecnologias; track tecnologia) {
+          <span class="etiqueta">{{ tecnologia }}</span>
+        }
+      </div>
+
+        <div class="enlaces">
+        @if (proyecto.sitio) {
+          <a [href]="proyecto.sitio" target="_blank">Ver sitio</a>
+        }
+        @if (proyecto.repo) {
+          <a [href]="proyecto.repo" target="_blank">Ver código</a>
+        }
+        @for (doc of proyecto.documentos; track doc.url) {
+          <a [href]="doc.url" target="_blank">{{ doc.titulo }}</a>
+        }
+      </div>
+    </article>
+  } @else {
+    <!-- Listado de tarjetas -->
+    @if (proyectos().length > 0) {
+      <div class="grilla">
+        @for (proyecto of proyectos(); track proyecto.id) {
+          <div class="tarjeta">
+            <img [src]="proyecto.imagen" [alt]="proyecto.titulo">
+            <span class="etiqueta">{{ proyecto.tipo }}</span>
+            <h3>{{ proyecto.titulo }}</h3>
+            <p>{{ proyecto.resumen }}</p>
+            <button (click)="verDetalle(proyecto)">Ver detalle</button>
+          </div>
+        }
+      </div>
+    } @else {
+      <p>Cargando proyectos...</p>
+    }
+  }
+</section>

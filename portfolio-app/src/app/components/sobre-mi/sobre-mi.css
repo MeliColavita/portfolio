@@ -1,5 +1,19 @@
-.sobre-mi { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
-.columnas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-.detalle { background: #f2f2f2; padding: 1rem; border-radius: 8px; }
-.lugar, .ayuda { color: #666; }
-.etiqueta { display: inline-block; background: #222; color: white; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; margin: 0 0.3rem 0.3rem 0; }
+.sobre-mi { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+.sobre-mi > p { color: #ccc; max-width: 70ch; margin-bottom: 2.5rem; }
+.columnas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; }
+
+h3 { font-size: 1.4rem; padding-bottom: 0.5rem; margin-bottom: 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+/* Categorías de skills: chicas, en mayúscula y turquesa */
+h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--turquesa); margin: 1.5rem 0 0.6rem; }
+h3 + h4 { margin-top: 0; }
+
+/* Etiquetas de skills: contorno suave en lugar de fondo lleno */
+.etiqueta { display: inline-block; background: rgba(29, 233, 182, 0.08); color: #e6e6e6; border: 1px solid rgba(29, 233, 182, 0.35); padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.85rem; margin: 0 0.4rem 0.4rem 0; transition: border-color 0.2s, color 0.2s; }
+.etiqueta:hover { border-color: var(--turquesa); color: var(--turquesa); }
+
+/* Detalle de la experiencia elegida */
+.detalle { background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--turquesa); padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; margin-top: 1rem; }
+.detalle h4 { font-size: 1.1rem; text-transform: none; letter-spacing: normal; color: var(--texto); margin: 0 0 0.25rem; }
+.lugar { color: #aaa; font-size: 0.9rem; }
+.ayuda { color: #888; font-size: 0.9rem; font-style: italic; }

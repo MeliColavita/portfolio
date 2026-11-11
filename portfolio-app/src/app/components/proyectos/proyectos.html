@@ -13,7 +13,7 @@
       <p>{{ proyecto.contexto }}</p>
       <h4>Problema</h4>
       <p>{{ proyecto.problema }}</p>
-      <h4>Mi rol</h4>
+      <h4>Nuestro rol</h4>
       <p>{{ proyecto.rol }}</p>
       <h4>Solución</h4>
       <p>{{ proyecto.solucion }}</p>
@@ -26,9 +26,17 @@
         }
       </div>
 
-      @if (proyecto.sitio) {
-        <a [href]="proyecto.sitio" target="_blank">Ver sitio</a>
-      }
+        <div class="enlaces">
+        @if (proyecto.sitio) {
+          <a [href]="proyecto.sitio" target="_blank">Ver sitio</a>
+        }
+        @if (proyecto.repo) {
+          <a [href]="proyecto.repo" target="_blank">Ver código</a>
+        }
+        @for (doc of proyecto.documentos; track doc.url) {
+          <a [href]="doc.url" target="_blank">{{ doc.titulo }}</a>
+        }
+      </div>
     </article>
   } @else {
     <!-- Listado de tarjetas -->

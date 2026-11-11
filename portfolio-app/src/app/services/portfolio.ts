@@ -15,6 +15,8 @@ export interface Proyecto {
   resultado: string;
   tecnologias: string[];
   sitio: string | null;
+  repo: string | null;
+  documentos: Documento[];
   imagen: string;
 }
 
@@ -32,6 +34,11 @@ export interface Skill {
   categoria: string;
   items: string[];
 }
+export interface Documento {
+  titulo: string;
+  url: string;
+}
+
 
 @Injectable({
   providedIn: 'root',

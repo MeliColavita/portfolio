@@ -1,13 +1,17 @@
-<section class="login">
-  <h2>Login</h2>
-  <form (submit)="enviar($event)">
-    <label for="nombre">Nombre de usuario</label>
-    <input #inputNombre id="nombre" type="text" [value]="nombre()" (input)="nombre.set(inputNombre.value)">
-    <label for="email">Email</label>
-    <input #inputEmail id="email" type="email" [value]="email()" (input)="email.set(inputEmail.value)">
-    <button type="submit">Enviar</button>
+<section class="login mx-auto p-4 mt-4">
+  <h2 class="titulo mb-4">Login</h2>
+  <form class="d-flex flex-column gap-3" (submit)="enviar($event)">
+    <div>
+      <label class="form-label" for="nombre">Nombre de usuario</label>
+      <input #inputNombre class="form-control" id="nombre" type="text" [value]="nombre()" (input)="nombre.set(inputNombre.value)">
+    </div>
+    <div>
+      <label class="form-label" for="email">Email</label>
+      <input #inputEmail class="form-control" id="email" type="email" [value]="email()" (input)="email.set(inputEmail.value)">
+    </div>
+    <button class="btn btn-contorno" type="submit">Enviar</button>
   </form>
   @if (mensaje()) {
-    <p class="mensaje">{{ mensaje() }}</p>
+    <p class="mensaje mt-4">{{ mensaje() }}</p>
   }
 </section>

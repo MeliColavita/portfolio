@@ -1,4 +1,6 @@
-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #222; color: white; }
-nav { display: flex; gap: 1rem; align-items: center; }
-a { color: white; text-decoration: none; }
-.boton-login { border: 1px solid white; padding: 0.4rem 1rem; border-radius: 6px; }
+:host { display: block; }
+.barra-lateral { background: #1a1c1d; border-bottom: 1px solid #333; }
+.logo { font-size: 1.5rem; font-weight: 800; }
+.logo span:first-child { color: var(--turquesa); }
+.logo span:last-child { color: var(--rosa); }
+@media (min-width: 768px) { :host { width: 150px; } .barra-lateral { height: 100%; border-bottom: none; border-right: 1px solid #333; } }

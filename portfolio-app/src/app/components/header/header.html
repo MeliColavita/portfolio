@@ -1,8 +1,9 @@
-<header class="barra-lateral d-flex flex-md-column align-items-center justify-content-between justify-content-md-start gap-4 p-3">
-  <h1 class="logo m-0"><span>M</span><span>E</span></h1>
-      <nav class="d-flex flex-md-column align-items-center gap-3">
-    <a routerLink="/sobre-mi">Sobre Nosotros</a>
-        <a routerLink="/proyectos">Proyectos</a>
-    <a class="btn btn-contorno" routerLink="/login">Login</a>
+<header class="barra">
+  <a class="logo" routerLink="/inicio" aria-label="Ir al inicio">ME<span class="cursor">_</span></a>
+  <nav class="menu" aria-label="Navegación principal">
+    <a routerLink="/inicio" routerLinkActive="activo"><sup>01</sup>// inicio</a>
+    <a routerLink="/sobre-mi" routerLinkActive="activo"><sup>02</sup>// sobre nosotros</a>
+    <a routerLink="/proyectos" routerLinkActive="activo"><sup>03</sup>// proyectos</a>
+    <a routerLink="/login" routerLinkActive="activo"><sup>04</sup>// login</a>
   </nav>
 </header>

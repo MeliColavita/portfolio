@@ -4,6 +4,11 @@
     <a routerLink="/inicio" routerLinkActive="activo"><sup>01</sup>// inicio</a>
     <a routerLink="/sobre-mi" routerLinkActive="activo"><sup>02</sup>// sobre nosotros</a>
     <a routerLink="/proyectos" routerLinkActive="activo"><sup>03</sup>// proyectos</a>
-    <a routerLink="/login" routerLinkActive="activo"><sup>04</sup>// login</a>
+    <a routerLink="/contacto" routerLinkActive="activo"><sup>04</sup>// contacto</a>
+    @if (auth.logueado()) {
+      <a class="salir" (click)="auth.cerrarSesion()"><sup>05</sup>// cerrar sesión</a>
+    } @else {
+      <a routerLink="/login" routerLinkActive="activo"><sup>05</sup>// login</a>
+    }
   </nav>
 </header>

@@ -1,4 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+import { Router } from '@angular/router';
+import { Auth } from '../../services/auth';
 @Component({
   selector: 'app-login',
   imports: [],
@@ -6,6 +8,8 @@ import { Component, signal } from '@angular/core';
   styleUrl: './login.css',
 })
 export class Login {
+  private auth = inject(Auth);
+  private router = inject(Router);
   nombre = signal('');
   email = signal('');
   mensaje = signal('');
@@ -17,5 +21,8 @@ export class Login {
     console.log(datos);
     this.nombre.set('');
     this.email.set('');
+    // Habilita los materiales y vuelve a donde estaba el usuario
+    this.auth.iniciarSesion();
+    setTimeout(() => this.router.navigateByUrl(this.auth.obtenerRetorno()), 1500);
   }
 }

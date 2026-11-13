@@ -11,3 +11,4 @@
 .menu a:focus-visible, .logo:focus-visible { outline: 2px solid var(--turquesa); outline-offset: 4px; }
 @keyframes parpadeo { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
+.salir { cursor: pointer; }

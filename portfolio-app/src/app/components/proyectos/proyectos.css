@@ -12,3 +12,6 @@
 button { background: transparent; color: var(--turquesa); border: 1px solid var(--turquesa); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; align-self: flex-start; }
 button:hover { background: var(--turquesa); color: var(--fondo); }
 .enlaces { display: flex; gap: 1rem; }
+.enlaces { flex-wrap: wrap; align-items: center; }
+.bloqueado { color: #aaa; border-color: rgba(255, 255, 255, 0.25); }
+.bloqueado:hover { background: transparent; color: var(--turquesa); border-color: var(--turquesa); }

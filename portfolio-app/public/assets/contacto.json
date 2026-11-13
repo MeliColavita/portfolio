@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nombre": "Melisa Colavita",
+    "email": "colavitamelisa@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/melisacolavita/",
+    "github": "https://github.com/MeliColavita"
+  },
+  {
+    "id": 2,
+    "nombre": "Emiliano Wampl",
+    "email": "emilianwampl@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/emiliano-wampl-72a141286/",
+    "github": "https://github.com/emiwampl"
+  }
+]

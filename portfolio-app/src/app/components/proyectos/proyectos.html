@@ -31,10 +31,18 @@
           <a [href]="proyecto.sitio" target="_blank">Ver sitio</a>
         }
         @if (proyecto.repo) {
-          <a [href]="proyecto.repo" target="_blank">Ver código</a>
+          @if (auth.logueado()) {
+            <a [href]="proyecto.repo" target="_blank">Ver código</a>
+          } @else {
+            <button class="bloqueado" (click)="irALogin(proyecto)">🔒 Ver código</button>
+          }
         }
         @for (doc of proyecto.documentos; track doc.url) {
-          <a [href]="doc.url" target="_blank">{{ doc.titulo }}</a>
+          @if (auth.logueado()) {
+            <a [href]="doc.url" target="_blank">{{ doc.titulo }}</a>
+          } @else {
+            <button class="bloqueado" (click)="irALogin(proyecto)">🔒 {{ doc.titulo }}</button>
+          }
         }
       </div>
     </article>

@@ -34,6 +34,13 @@ export interface Skill {
   categoria: string;
   items: string[];
 }
+export interface Contacto {
+  id: number;
+  nombre: string;
+  email: string;
+  linkedin: string;
+  github: string;
+}
 export interface Documento {
   titulo: string;
   url: string;
@@ -59,5 +66,10 @@ export class Portfolio {
   // GET 3: skills
   getSkills() {
     return this.http.get<Skill[]>('assets/skills.json');
+  }
+  
+  // GET 4: contacto
+  getContacto() {
+    return this.http.get<Contacto[]>('assets/contacto.json');
   }
 }

@@ -13,7 +13,7 @@
     "solucion": "Armamos un sitio narrativo en tres capítulos (Argentina hoy, El tiempo, El futuro) que compara por provincia la mortalidad con el acceso al diagnóstico. Lo diseñamos con fondo oscuro, acentos rosa y una vela que se consume a medida que avanza el relato.",
     "resultado": "Publicamos el sitio en cancerdemama.com.ar y lo presentamos al concurso.",
     "tecnologias": ["HTML", "CSS", "JavaScript", "Visualización de datos", "Datos abiertos"],
-    "repo": null,
+    "repo": "https://github.com/MeliColavita/prorroga.git",
     "sitio": "https://cancerdemama.com.ar",
     "documentos": [],
     "imagen": "assets/img/cancer-mama.png"

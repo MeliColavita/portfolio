@@ -1,5 +1,0 @@
-.login { max-width: 450px; }
-.titulo { color: var(--turquesa); font-weight: 800; }
-.form-control { background: #2b2e30; border: 1px solid #444; color: var(--texto); }
-.form-control:focus { background: #2b2e30; color: var(--texto); border-color: var(--turquesa); box-shadow: none; }
-.mensaje { color: var(--turquesa); font-weight: bold; }

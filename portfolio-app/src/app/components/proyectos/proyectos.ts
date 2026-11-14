@@ -1,6 +1,6 @@
 import { Component, effect, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Portfolio, Proyecto } from '../../services/portfolio';
 import { Auth } from '../../services/auth';
 
@@ -12,7 +12,6 @@ import { Auth } from '../../services/auth';
 })
 export class Proyectos {
   private portfolio = inject(Portfolio);
-  private router = inject(Router);
   private route = inject(ActivatedRoute);
   auth = inject(Auth);
 
@@ -46,6 +45,6 @@ export class Proyectos {
   // Candado: guarda el proyecto actual y manda al login
   irALogin(proyecto: Proyecto) {
     this.auth.guardarRetorno('/proyectos?proyecto=' + proyecto.id);
-    this.router.navigate(['/login']);
+    this.auth.iniciarSesion();
   }
 }

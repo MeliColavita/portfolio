@@ -3,10 +3,10 @@ import { NavigationEnd, Router } from '@angular/router';
 import { AuthConfig, OAuthService } from 'angular-oauth2-oidc';
 
 const authConfig: AuthConfig = {
-  issuer: 'https://localhost:9443/oauth2/token',
-  clientId: 'MYH7eCA5Zx74CygvxdZfhm7YPusa',
-  redirectUri: 'http://localhost:4200',
-  postLogoutRedirectUri: 'http://localhost:4200',
+  issuer: 'https://api.asgardeo.io/t/portfoliomeliemi/oauth2/token',
+  clientId: 'NoLd_3FeFem6UrKwZ4Lkm0RMa70a',
+  redirectUri: window.location.origin, //toma la direccion donde esta abierta la app (netlify)
+  postLogoutRedirectUri: window.location.origin,
   responseType: 'code',
   scope: 'openid profile email',
   strictDiscoveryDocumentValidation: false

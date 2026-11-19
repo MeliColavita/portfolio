@@ -8,7 +8,7 @@
     @if (auth.logueado()) {
       <a class="salir" (click)="auth.cerrarSesion()"><sup>05</sup>// cerrar sesión</a>
     } @else {
-      <a routerLink="/login" routerLinkActive="activo"><sup>05</sup>// login</a>
+      <a class="salir" (click)="auth.iniciarSesion()"><sup>05</sup>// login</a>
     }
   </nav>
 </header>
